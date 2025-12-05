@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "bucket_name" {
   type        = string
   description = "Enter Your Project Bucket Name"
-  default     = "as-metroc-terraform-2025-tfstate"
+  default     = "as-metroc-terraform-2025-new"
 }
 
 variable "glue_bucket_name" {
@@ -43,7 +43,7 @@ variable "api_name" {
 variable "table_name" {
   type        = string
   description = "Enter Your DynamoDB table name"
-  default     = "lambda-apigateway"
+  default     = "lambda-apigateway2"
 }
 
 variable "job_name" {
