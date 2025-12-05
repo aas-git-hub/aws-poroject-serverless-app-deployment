@@ -35,7 +35,7 @@ resource "aws_apigatewayv2_integration" "glue_lambda" {
 
 resource "aws_apigatewayv2_route" "dynamodb_lambda_route" {
   api_id    = aws_apigatewayv2_api.serverless_api.id
-  route_key = "POST /invoke/dynamodb"
+  route_key = "ANY /invoke/dynamodb"
 
   target = "integrations/${aws_apigatewayv2_integration.dynamodb_lambda.id}"
 }
